@@ -5,7 +5,7 @@
         </title>
     </head>
     <style>
-        .user, .pass, .btn
+        #user, #pass, #btn
         {
             height: 60px;
             width: 300px;
@@ -15,7 +15,7 @@
             border-radius: 20px;
             
         }
-        .btn
+        #btn
         {
           background-color: skyblue;
         }
@@ -28,10 +28,28 @@
           align-items: center;
         }
     </style>
+        
     <body>
+    <input type="name" id="user" placeholder="Enter Your Email"><br />
+    <input type="name" id="pass" placeholder="Enter Your Password">
+    <button id="btn" type="submit" onclick="login()">Log In</button>
+    <script>
+        function login()
+        {
+        let a=document.getElementById("user").value;
+        let b=document.getElementById("pass").value;
+        
+        if(a=="collabwithboys" && b=="90lpa")
+        {
+            alert("Login Successful.")
+        }
+        else
+        {
+            alert("Invalid Credentials.")
+        }
 
-    <input type="name" class="user" placeholder="Enter Your Email"><br />
-    <input type="name" class="pass" placeholder="Enter Your Password">
-    <button class="btn" type="submit">Log In</button>
+
+            }
+    </script>
   </body>
 </html>
