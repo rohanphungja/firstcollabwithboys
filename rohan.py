@@ -11,7 +11,7 @@ while True:
           
     elif( choice == "n"):
       if (a==0):
-         print("Game terminated")
+         print("Game terminated.")
       else:
         print(f"Thanks for playing the game. You played the game for {a} times")
       break
