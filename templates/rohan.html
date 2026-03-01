@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Piyush
+            rohan
         </title>
     </head>
     <style>
@@ -29,9 +29,11 @@
         }
     </style>
     <body>
-
-    <input type="name" class="user" placeholder="Enter Your Email"><br />
-    <input type="name" class="pass" placeholder="Enter Your Password">
-    <button class="btn" type="submit">Log In</button>
+    <form method="POST" action="{{ url_for('form')}}">
+          <input type="text" name="email" class="user" placeholder="Enter Your Email"><br />
+          <input type="text" name="password" class="pass" placeholder="Enter your Password"><br>
+          <button class="btn" type="submit" value="Login"> Login</button>
+    </form>
+        
   </body>
 </html>
