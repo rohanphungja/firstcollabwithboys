@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Piyush
+        </title>
+    </head>
+    <style>
+        #user, #pass, #btn
+        {
+            height: 60px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 20px;
+            
+        }
+        #btn
+        {
+          background-color: skyblue;
+        }
+        body
+        {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
+        
+    <body>
+    <input type="name" id="user" placeholder="Enter Your Email"><br />
+    <input type="name" id="pass" placeholder="Enter Your Password">
+    <button id="btn" type="submit" onclick="login()">Log In</button>
+    <script>
+        function login()
+        {
+        let a=document.getElementById("user").value;
+        let b=document.getElementById("pass").value;
+        
+        if(a=="collabwithboys" && b=="90lpa")
+        {
+            alert("Login Successful.")
+        }
+        else
+        {
+            alert("Invalid Credentials.")
+        }
+
+
+            }
+    </script>
+  </body>
+</html>
