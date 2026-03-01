@@ -7,12 +7,19 @@ while True:
       num = int(input("How many time do you want to roll the dice? "))
       for i in range(num):
            print(f"({randint(1,6)} , {randint(1,6)})")
+      a += 1
+          
     elif( choice == "n"):
-      print(f"Thanks for playing the game. You played the game for {a} times")
+      if (a==0):
+         print("Game terminated")
+      else:
+        print(f"Thanks for playing the game. You played the game for {a} times")
       break
+    
+       
     else:
       print("invalid choice")
-    a += 1
+    
 
 
 
