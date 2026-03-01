@@ -5,14 +5,33 @@
         </title>
     </head>
     <style>
-        .user, .pass
+        .user, .pass, .btn
         {
-            height: 50px;
-            width: 100px;
+            height: 60px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 20px;
+            
+        }
+        .btn
+        {
+          background-color: skyblue;
+        }
+        body
+        {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
         }
     </style>
+    <body>
 
-    <input type="name" class="user" placeholder="Enter Your Email">
+    <input type="name" class="user" placeholder="Enter Your Email"><br />
     <input type="name" class="pass" placeholder="Enter Your Password">
-
+    <button class="btn" type="submit">Log In</button>
+  </body>
 </html>
